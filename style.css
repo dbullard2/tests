@@ -34,8 +34,7 @@ p{
 }
 
 .button-container{
-  background-color: red;
-  width: 800px;
+  width: 604px;
   height: 100px;
   margin: 0 auto;
 }
@@ -53,4 +52,10 @@ p{
 @font-face{
   font-family: 'montserrat';
   src: url('Montserrat-Regular.ttf');
+}
+
+input{
+  text-align: center;
+  margin: 0 auto;
+  
 }

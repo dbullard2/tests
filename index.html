@@ -11,8 +11,9 @@
 
     <p>I am a:</p>
     <div class="button-container">
-      <button type="button" name="button">Student</button>
-      <button type="button" name="button">Teacher</button>
+      <a href="students.html"><button type="button" name="button">Student</button></a>
+      <a href="teachers.html"><button type="button" name="button" style="margin-left: 200px;">Teacher</button></a>
+      <button type="button" name="button" onclick="submitId();"></button>
     </div>
 
     <div class="mock-test">
@@ -23,30 +24,25 @@
       <p>D. BF<sub>3</sub></p>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC8ojEur_h6t0mg0wbcNaJJboQu6WUj8GU",
+        authDomain: "tests-ac60d.firebaseapp.com",
+        databaseURL: "https://tests-ac60d.firebaseio.com",
+        projectId: "tests-ac60d",
+        storageBucket: "tests-ac60d.appspot.com",
+        messagingSenderId: "15209309115",
+        appId: "1:15209309115:web:e3817862b3506f7fe09a9e"
+      };
+      //Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
-
-
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyC8ojEur_h6t0mg0wbcNaJJboQu6WUj8GU",
-    authDomain: "tests-ac60d.firebaseapp.com",
-    databaseURL: "https://tests-ac60d.firebaseio.com",
-    projectId: "tests-ac60d",
-    storageBucket: "tests-ac60d.appspot.com",
-    messagingSenderId: "15209309115",
-    appId: "1:15209309115:web:e3817862b3506f7fe09a9e"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+    <script src="script.js"></script>
   </body>
 </html>

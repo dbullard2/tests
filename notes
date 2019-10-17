@@ -1,0 +1,12 @@
+core functionality: 
+
+1. gives the user the ability to create a multiple choice test
+2. allows users to take multiple choice tests created by other users
+3. allows users to see how other users did on the tests they created
+
+
+
+
+execution
+
+- when someone creates a new test, a unique code is generated for that test that allows other users to find and take that test
